@@ -54,7 +54,7 @@ Which would print `Message from my script: Hello World!` in the console.
 In script user functions, you can still access global namespace variables like `app` or `moment`.
 
 However, you can't access the template engine scoped variables like `tp` or `tR`. If you want to use them, you must pass them as arguments for your function.
-
+a
 ## [Functions Arguments](chrome-extension://pcmpcfapbekmbjjkdalcgopdkipoggdi/_generated_background_page.html#functions-arguments)
 
 You can pass as many arguments as you want to your function, depending on how you defined it.

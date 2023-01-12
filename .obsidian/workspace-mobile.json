@@ -29,7 +29,7 @@
               "type": "markdown",
               "state": {
                 "file": "Scripts/README.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               },
               "pinned": true
@@ -55,8 +55,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Bash/Shell scripting step by step tutoriala.md",
-                "mode": "preview",
+                "file": "README.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -76,7 +76,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -142,7 +142,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "Bash/Shell scripting step by step tutoriala.md",
+            "file": "Scripts/README.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -159,7 +159,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "Bash/Shell scripting step by step tutoriala.md",
+            "file": "Scripts/README.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -171,24 +171,24 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "Bash/Shell scripting step by step tutoriala.md"
+            "file": "Scripts/README.md"
           }
         }
       }
     ],
     "currentTab": 1
   },
-  "active": "23a7eb9889143407",
+  "active": "767c26a67cc0747e",
   "lastOpenFiles": [
+    "README.md",
+    "Termux/Termux_Python.md",
     "!.md",
+    "Bash/Shell scripting step by step tutoriala.md",
     "templater/temp1.md",
     "templater/base.md",
     "<% tp.date.now(\"YYYY-MM-DD\", -1) %>.md",
     "Templates/templater tutorial.md",
     "Templates/base.md",
-    "Bash/Shell scripting step by step tutoriala.md",
-    "Bash/Bash_scripts_nachalo_001.md",
-    "Shell scripting step by step tutoriala.md",
-    "Bash/bash_scripts_002.md"
+    "Bash/Bash_scripts_nachalo_001.md"
   ]
 }

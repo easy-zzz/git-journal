@@ -23,7 +23,8 @@
     "editor:redo",
     "editor:toggle-keyboard",
     "editor:configure-toolbar",
-    "extract-url:extract-url"
+    "obsidian-git:view-file-on-github",
+    "obsidian-git:view-history-on-github"
   ],
   "promptDelete": false,
   "alwaysUpdateLinks": true
