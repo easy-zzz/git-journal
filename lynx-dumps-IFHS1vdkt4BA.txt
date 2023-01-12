@@ -1,0 +1,253 @@
+     __________________________________________________________________
+
+     * Table of Contents
+     * Next Chapter
+     __________________________________________________________________
+
+                Chapter 1: Introducing zsh and how to install it
+
+1.1: Sources of information
+
+   Information on zsh is available via the World Wide Web. The URL is
+   https://zsh.sourceforge.io/ . The server provides this FAQ and much
+   else and is now maintained by the zsh workers (email
+   zsh-workers@zsh.org). The FAQ is at https://zsh.sourceforge.io/FAQ/ .
+   The site also contains some contributed zsh scripts and functions; we
+   are delighted to add more, or simply links to your own collection.
+
+   This document was originally written in YODL, allowing it to be
+   converted easily into various other formats. The master source file
+   lives at https://zsh.sourceforge.io/FAQ/zshfaq.yo and the plain text
+   version can be found at https://zsh.sourceforge.io/FAQ/zshfaq.txt .
+
+   Another useful source of information is the collection of FAQ articles
+   posted frequently to the Usenet news groups comp.unix.questions,
+   comp.unix.shells and comp.answers with answers to general questions
+   about UNIX. The fifth of the seven articles deals with shells,
+   including zsh, with a brief description of differences. There is also a
+   separate FAQ on shell differences and how to change your shell. Usenet
+   FAQs are available via FTP from rtfm.mit.edu and mirrors and also on
+   the World Wide Web; see
+
+   USA http://www.cis.ohio-state.edu/hypertext/faq/usenet/top.html
+   UK http://www.lib.ox.ac.uk/internet/news/faq/comp.unix.shell.html
+   Netherlands http://www.cs.uu.nl/wais/html/na-dir/unix-faq/shell/.html
+
+   You can also get it via email by emailing mail-server@rtfm.mit.edu
+   with, in the body of the message, send faqs/unix-faq/shell/zsh.
+
+   The latest version of this FAQ is also available directly from any of
+   the zsh archive sites listed in question 1.6.
+
+   I have put together a user guide to complement the manual by explaining
+   the most useful features of zsh in a more easy to read way. This can be
+   found at the zsh web site: https://zsh.sourceforge.io/Guide/
+
+   (As a method of reading the following in Emacs, you can type \M-2 \C-x
+   $ to make all the indented text vanish, then \M-0 \C-x $ when you are
+   on the title you want.)
+
+   For any more eclectic information, you should contact the mailing list:
+   see question 6.2.
+
+1.2: What is it?
+
+   Zsh is a UNIX command interpreter (shell) which of the standard shells
+   most resembles the Korn shell (ksh); its compatibility with the 1988
+   Korn shell has been gradually increasing. It includes enhancements of
+   many types, notably in the command-line editor, options for customising
+   its behaviour, filename globbing, features to make C-shell (csh) users
+   feel more at home and extra features drawn from tcsh (another `custom'
+   shell).
+
+   It was written by Paul Falstad when a student at Princeton; however,
+   Paul doesn't maintain it any more and enquiries should be sent to the
+   mailing list (see question 6.2). Zsh is distributed under a standard
+   Berkeley style copyright.
+
+   For more information, the files Doc/intro.txt or Doc/intro.troff
+   included with the source distribution are highly recommended. A list of
+   features is given in FEATURES, also with the source.
+
+1.3: What is it good at?
+
+   Here are some things that zsh is particularly good at. No claim of
+   exclusivity is made, especially as shells copy one another, though in
+   the areas of command line editing and globbing zsh is well ahead of the
+   competition. I am not aware of a major interactive feature in any other
+   freely-available shell which zsh does not also have (except smallness).
+
+     * Command line editing:
+          + programmable completion: incorporates the ability to use the
+            full power of zsh's globbing and shell programming features,
+          + multi-line commands editable as a single buffer (even files!),
+          + variable editing (vared),
+          + command buffer stack,
+          + print text straight into the buffer for immediate editing
+            (print -z),
+          + execution of unbound commands,
+          + menu completion in two flavours,
+          + variable, editing function and option name completion,
+          + inline expansion of variables and history commands.
+     * Globbing --- extremely powerful, including:
+          + recursive globbing (cf. find),
+          + file attribute qualifiers (size, type, etc. also cf. find),
+          + full alternation and negation of patterns.
+     * Handling of multiple redirections (simpler than tee).
+     * Large number of options for tailoring.
+     * Path expansion (=foo -> /usr/bin/foo).
+     * Adaptable messages for spelling, watch, time as well as prompt
+       (including conditional expressions).
+     * Named directories.
+     * Comprehensive integer and floating point arithmetic.
+     * Manipulation of arrays (including reverse subscripting).
+     * Associative arrays (key-to-value hashes)
+     * Spelling correction.
+
+1.4: On what machines will it run?
+
+   From version 3.0, zsh uses GNU autoconf as the installation mechanism.
+   This considerably increases flexibility over the old `buildzsh'
+   mechanism. Consequently, zsh should compile and run on any modern
+   version of UNIX, and a great many not-so-modern versions too. The file
+   MACHINES in the distribution has more details.
+
+   There used to be separate ports for Windows and OS/2, but these are
+   rather out of date and hard to get; however, zsh exists for the Cygwin
+   environment. See further notes below.
+
+   If you need to change something to support a new machine, it would be
+   appreciated if you could add any necessary preprocessor code and alter
+   configure.in and acconfig.h to configure zsh automatically, then send
+   the required unified diffs to the list (see question 6.2). Please make
+   sure you have the latest version first.
+
+   To get it to work, retrieve the source distribution (see question 1.6),
+   un-gzip it, un-tar it and read the INSTALL file in the top directory.
+   Also read the MACHINES file for up-to-date information on compilation
+   on certain architectures.
+
+   Note for users of nawk (The following information comes from Zoltan
+   Hidvegi): On some systems nawk is broken and produces an incorrect
+   signames.h file. This makes the signals code unusable. This often
+   happens on Ultrix, HP-UX, IRIX (?). Install gawk if you experience such
+   problems.
+
+1.5: What's the latest version?
+
+   Zsh 5.9 is the latest production version. For details of all the
+   changes, see the NEWS file in the source distribution.
+
+   A beta of the next version is sometimes available. Development of zsh
+   is patch by patch, with each intermediate version publicly available.
+   Note that this `open' development system does mean bugs are sometimes
+   introduced into the most recent archived version. These are usually
+   fixed quickly. If you are really interested in getting the latest
+   improvements, and less worried about providing a stable environment,
+   development versions are uploaded quite frequently to the archive in
+   the development subdirectory.
+
+   Note also that as the shell changes, it may become incompatible with
+   older versions; see the end of question 6.1 for a partial list. Changes
+   of this kind are almost always forced by an awkward or unnecessary
+   feature in the original design (as perceived by current users), or to
+   enhance compatibility with other Bourne shell derivatives, or (mostly
+   in the 3.0 series) to provide POSIX compliance.
+
+1.6: Where do I get it?
+
+   The coordinator of development is currently me; the alias
+   coordinator@zsh.org can be used to contact whoever is in the hot seat.
+   https://www.zsh.org/ is the official archive site. Test versions are
+   kept in the `testing' subdirectory: such up-to-the-minute development
+   versions should only be retrieved if you actually plan to help test the
+   latest version of the shell.
+
+   A Windows port was created by Amol Deshpandem based on 3.0.5 (which is
+   now rather old). This has now been restored and can be found at
+   http://zsh-nt.sourceforge.net/.
+
+   All recent releases of zsh compile under Cygwin, a freely available
+   UNIX-style environment for the Win32 API, and a pre-compiled version of
+   zsh can be downloaded by the Cygwin installer. You can find information
+   about this at http://www.cygwin.com/. Please email zsh-workers@zsh.org
+   if you have information about other ports.
+
+   Starting from mid-October 1997, there is an archive of patches sent to
+   the maintainers' mailing list. Note that these may not all be added to
+   the shell, and some may already have been; you simply have to search
+   for something you might want which is not in the version you have.
+   Also, there may be some prerequisites earlier in the archive. It can be
+   found on the zsh WWW pages (as described in 1.1) at:
+
+   https://zsh.sourceforge.io/Patches/
+
+1.7: I don't have root access: how do I make zsh my login shell?
+
+   Unfortunately, on many machines you can't use chsh to change your shell
+   unless the name of the shell is contained in /etc/shells, so if you
+   have your own copy of zsh you need some sleight-of-hand to use it when
+   you log on. (Simply typing zsh is not really a solution since you still
+   have your original login shell waiting for when you exit.)
+
+   The basic idea is to use exec <zsh-path> to replace the current shell
+   with zsh. Often you can do this in a login file such as .profile (if
+   your shell is sh or ksh) or .login (if it's csh). Make sure you have
+   some way of altering the file (e.g. via FTP) before you try this as
+   exec is often rather unforgiving.
+
+   If you have zsh in a subdirectory bin of your home directory, put this
+   in .profile:
+
+    [ -f $HOME/bin/zsh ] && exec $HOME/bin/zsh -l
+
+
+   or if your login shell is csh or tcsh, put this in .login:
+
+    if ( -f ~/bin/zsh ) exec ~/bin/zsh -l
+
+
+   (in each case the -l tells zsh it is a login shell).
+
+   If you want to check this works before committing yourself to it, you
+   can make the login shell ask whether to exec zsh. The following work
+   for Bourne-like shells:
+
+    [ -f $HOME/bin/zsh ] && {
+            echo "Type Y to run zsh: \c"
+            read line
+            [ "$line" = Y ] && exec $HOME/bin/zsh -l
+    }
+
+
+   and for C-shell-like shells:
+
+    if ( -f ~/bin/zsh ) then
+            echo -n "Type Y to run zsh: "
+            if ( "$<" == Y ) exec ~/bin/zsh -l
+    endif
+
+
+   It's not a good idea to put this (even without the -l) into .cshrc, at
+   least without some tests on what the csh is supposed to be doing, as
+   that will cause _every_ instance of csh to turn into a zsh and will
+   cause csh scripts (yes, unfortunately some people write these) which do
+   not call `csh -f' to fail. If you want to tell xterm to run zsh, change
+   the SHELL environment variable to the full path of zsh at the same time
+   as you exec zsh (in fact, this is sensible for consistency even if you
+   aren't using xterm). If you have to exec zsh from your .cshrc, a
+   minimum safety check is if ($?prompt) exec zsh.
+
+   If you like your login shell to appear in the process list as -zsh, you
+   can link zsh to -zsh (e.g. by ln -s ~/bin/zsh ~/bin/-zsh) and change
+   the exec to exec -zsh. (Make sure -zsh is in your path.) This has the
+   same effect as the -l option.
+
+   Footnote: if you DO have root access, make sure zsh goes in /etc/shells
+   on all appropriate machines, including NIS clients, or you may have
+   problems with FTP to that machine.
+     __________________________________________________________________
+
+     * Table of Contents
+     * Next Chapter
+     __________________________________________________________________

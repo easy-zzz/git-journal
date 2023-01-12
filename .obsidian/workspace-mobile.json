@@ -1,0 +1,194 @@
+{
+  "main": {
+    "id": "5fbe4a16124dbaf2",
+    "type": "split",
+    "children": [
+      {
+        "id": "8155ecc3e527677f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "157ac2190ce900f0",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "templater/temp1.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "767c26a67cc0747e",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Scripts/README.md",
+                "mode": "preview",
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "d50406e13a383e45",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Без названия.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "23a7eb9889143407",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Bash/Shell scripting step by step tutoriala.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "685e7d3a8b953d98",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "templater/temp1.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d264320ad3347feb",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "241b97075913bc87",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "7373d6d204d7118b",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "tag:#tutorial",
+            "matchingCase": false,
+            "explainSearch": true,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "377bfb4816fac341",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          }
+        }
+      },
+      {
+        "id": "ee638dcd2b61f41c",
+        "type": "leaf",
+        "state": {
+          "type": "starred",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "d6d2401a0633c5db",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "35bd074bd33f1e64",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "Bash/Shell scripting step by step tutoriala.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": false
+          }
+        }
+      },
+      {
+        "id": "dca235cbb649ec38",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "Bash/Shell scripting step by step tutoriala.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "d3e312ec12bbb6df",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "Bash/Shell scripting step by step tutoriala.md"
+          }
+        }
+      }
+    ],
+    "currentTab": 1
+  },
+  "active": "23a7eb9889143407",
+  "lastOpenFiles": [
+    "!.md",
+    "templater/temp1.md",
+    "templater/base.md",
+    "<% tp.date.now(\"YYYY-MM-DD\", -1) %>.md",
+    "Templates/templater tutorial.md",
+    "Templates/base.md",
+    "Bash/Shell scripting step by step tutoriala.md",
+    "Bash/Bash_scripts_nachalo_001.md",
+    "Shell scripting step by step tutoriala.md",
+    "Bash/bash_scripts_002.md"
+  ]
+}

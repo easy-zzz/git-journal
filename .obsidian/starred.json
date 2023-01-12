@@ -1,0 +1,14 @@
+{
+  "items": [
+    {
+      "type": "file",
+      "title": "temp1",
+      "path": "templater/temp1.md"
+    },
+    {
+      "type": "file",
+      "title": "README",
+      "path": "Scripts/README.md"
+    }
+  ]
+}
